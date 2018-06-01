@@ -1,0 +1,87 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Fri Dec 30 14:29:31 2016
+| Host         : CAN running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file VGA_control_sets_placed.rpt
+| Design       : VGA
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |   112 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |           10 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              68 |           23 |
+| Yes          | No                    | No                     |               5 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              99 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+---------------------------+---------------------------+------------------+----------------+
+|      Clock Signal      |       Enable Signal       |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------------+---------------------------+---------------------------+------------------+----------------+
+|  segMux/E[1]           |                           | segMux/AR[1]              |                1 |              1 |
+|  segClk/CLK            | segMux/out_mux[0]_i_1_n_0 |                           |                1 |              1 |
+|  segClk/CLK            | segMux/out_mux[0]_i_1_n_0 | segMux/out_mux[1]_i_1_n_0 |                1 |              1 |
+|  VGACLK_BUFG           |                           | Game/VSYNC0               |                1 |              1 |
+|  VGACLK_BUFG           |                           | Game/R[3]_i_1_n_0         |                1 |              1 |
+|  VGACLK_BUFG           |                           | Game/HSYNC0               |                1 |              1 |
+|  CLOCK_24_IBUF_BUFG[0] |                           |                           |                1 |              1 |
+|  segMux/E[0]           |                           | segMux/AR[0]              |                1 |              2 |
+|  segClk/CLK            |                           |                           |                1 |              2 |
+|  VGACLK_BUFG           |                           | Game/R[2]_i_1_n_0         |                1 |              3 |
+|  segMux/E[2]           |                           | segMux/AR[2]              |                1 |              4 |
+|  segClk/CLK            | segMux/o[3]_i_1_n_0       |                           |                2 |              4 |
+|  VGACLK_BUFG           | Game/POINT                | Game/POINT[6]_i_1_n_0     |                2 |              7 |
+|  VGACLK_BUFG           |                           |                           |                8 |              9 |
+|  VGACLK_BUFG           |                           | Game/p_3_in               |                4 |             10 |
+|  VGACLK_BUFG           | Game/xXpos2[9]_i_2_n_0    | Game/xXpos2[9]_i_1_n_0    |                6 |             10 |
+|  VGACLK_BUFG           | Game/p_3_in               | Game/VPOS_0               |                3 |             10 |
+|  VGACLK_BUFG           |                           | segClk/clear              |                5 |             20 |
+|  CLOCK_24_IBUF_BUFG[0] |                           | VgaClock/eqOp             |                7 |             25 |
+|  VGACLK_BUFG           | Game/xXpos2[9]_i_2_n_0    | Game/xXpos2[5]_i_1_n_0    |               26 |             71 |
++------------------------+---------------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     7 |
+| 2      |                     2 |
+| 3      |                     1 |
+| 4      |                     2 |
+| 7      |                     1 |
+| 9      |                     1 |
+| 10     |                     3 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+

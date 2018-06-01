@@ -1,0 +1,664 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Dec 30 14:28:29 2016
+# Process ID: 1624
+# Current directory: C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.runs/synth_1
+# Command line: vivado.exe -log VGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA.tcl
+# Log file: C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.runs/synth_1/VGA.vds
+# Journal file: C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGA.tcl -notrace
+Command: synth_design -top VGA -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 308.664 ; gain = 98.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:18]
+INFO: [Synth 8-3491] module 'PLL' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/PLL.vhd:5' bound to instance 'VgaClock' of component 'PLL' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'PLL' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/PLL.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'PLL' (1#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/PLL.vhd:11]
+INFO: [Synth 8-3491] module 'SYNC' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:5' bound to instance 'Game' of component 'SYNC' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'SYNC' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:46]
+WARNING: [Synth 8-3512] assigned value '950' out of range [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:142]
+WARNING: [Synth 8-3512] assigned value '950' out of range [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:150]
+WARNING: [Synth 8-614] signal 'HPOS' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'VPOS' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'POINT' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'X1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'Y1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos2' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos3' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos4' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos5' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos6' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos7' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xXpos8' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos2' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos3' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos4' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos5' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos6' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos7' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'xYpos8' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'KOXX' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+WARNING: [Synth 8-614] signal 'KOYY' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'SYNC' (2#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:46]
+INFO: [Synth 8-3491] module 'SQ' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:4' bound to instance 'Bird' of component 'SQ' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'SQ' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:13]
+WARNING: [Synth 8-614] signal 'Xcur' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:15]
+WARNING: [Synth 8-614] signal 'Ycur' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:15]
+WARNING: [Synth 8-614] signal 'Ypos' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'SQ' (3#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:13]
+INFO: [Synth 8-3491] module 'BOXES' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:4' bound to instance 'BOX' of component 'BOXES' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'BOXES' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:27]
+WARNING: [Synth 8-614] signal 'Xpos1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Xpos2' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos2' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Xpos3' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos3' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Xpos4' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos4' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Xpos5' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos5' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Xpos6' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos6' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Xpos7' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos7' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Xpos8' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+WARNING: [Synth 8-614] signal 'Ypos8' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'BOXES' (4#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:27]
+INFO: [Synth 8-3491] module 'segmentClk' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentClk.vhd:5' bound to instance 'segClk' of component 'segmentClk' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'segmentClk' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentClk.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'segmentClk' (5#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentClk.vhd:9]
+INFO: [Synth 8-3491] module 'SegmentMux' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentMux.vhd:4' bound to instance 'segMux' of component 'SegmentMux' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'SegmentMux' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentMux.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'SegmentMux' (6#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentMux.vhd:10]
+INFO: [Synth 8-3491] module 'SegmentDecoder' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentDecoder.vhd:4' bound to instance 'segDec' of component 'SegmentDecoder' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'SegmentDecoder' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentDecoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'SegmentDecoder' (7#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentDecoder.vhd:9]
+INFO: [Synth 8-3491] module 'GameOver' declared at 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/GameOver.vhd:4' bound to instance 'KO' of component 'GameOver' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'GameOver' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/GameOver.vhd:13]
+WARNING: [Synth 8-614] signal 'Xpos1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/GameOver.vhd:16]
+WARNING: [Synth 8-614] signal 'Ypos1' is read in the process but is not in the sensitivity list [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/GameOver.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'GameOver' (8#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/GameOver.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (9#1) [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/VGA.vhd:18]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[31]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[30]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[29]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[28]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[27]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[26]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[25]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[24]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[23]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[22]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[21]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[20]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[19]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[18]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[17]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[16]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[15]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[14]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[13]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[12]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[11]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[10]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[9]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[8]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[7]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[6]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[5]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[4]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[3]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[2]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[1]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[0]
+WARNING: [Synth 8-3331] design VGA has unconnected port CLOCK_24[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 346.066 ; gain = 135.949
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 346.066 ; gain = 135.949
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/constrs_1/new/CONSTRAINTS.xdc]
+Finished Parsing XDC File [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/constrs_1/new/CONSTRAINTS.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/constrs_1/new/CONSTRAINTS.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 641.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'xYpos2_reg[9:0]' into 'xYpos1_reg[9:0]' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:139]
+INFO: [Synth 8-4471] merging register 'xYpos3_reg[9:0]' into 'xYpos1_reg[9:0]' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:141]
+INFO: [Synth 8-4471] merging register 'xYpos4_reg[9:0]' into 'xYpos1_reg[9:0]' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:143]
+INFO: [Synth 8-4471] merging register 'xYpos8_reg[9:0]' into 'xYpos5_reg[9:0]' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:151]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:162]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:162]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:161]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:161]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:162]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:162]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:161]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:161]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:162]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:162]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:161]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:161]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:237]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:160]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SYNC.vhd:159]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:17]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:17]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:17]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:17]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:17]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SQ.vhd:17]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:33]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:33]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:34]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:34]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:35]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:35]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:36]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:36]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:37]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:37]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:39]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:39]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:33]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:33]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:34]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:34]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:35]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:35]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:36]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:36]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:37]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:37]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:39]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:39]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:32]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:33]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:33]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:34]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:34]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:35]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:35]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:36]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:36]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:37]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:37]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:38]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/BOXES.vhd:38]
+INFO: [Common 17-14] Message 'Synth 8-41' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.srcs/sources_1/new/SegmentDecoder.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 41    
+	   2 Input     10 Bit       Adders := 65    
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 16    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 18    
+	   2 Input      7 Bit        Muxes := 4     
+	  10 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PLL 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module SYNC 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 16    
+	   2 Input     10 Bit       Adders := 31    
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 16    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 18    
+	   2 Input      7 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+Module SQ 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+Module BOXES 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 16    
+	   2 Input     10 Bit       Adders := 16    
+Module segmentClk 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SegmentMux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module SegmentDecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+Module GameOver 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[31]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[30]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[29]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[28]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[27]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[26]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[25]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[24]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[23]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[22]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[21]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[20]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[19]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[18]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[17]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[16]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[15]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[14]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[13]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[12]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[11]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[10]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[9]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[8]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[7]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[6]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[5]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[4]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[3]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[2]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[1]
+WARNING: [Synth 8-3331] design SYNC has unconnected port SPEED[0]
+WARNING: [Synth 8-3331] design VGA has unconnected port CLOCK_24[1]
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[0]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[1]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[2]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[3]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[4]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[5]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[6]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[7]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[8]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/X1_reg[9]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[0]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[1]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[8]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[7]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[4]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[3]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[2]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[5]' (FDSE) to 'Game/xYpos7_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[6]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos6_reg[9]' (FDRE) to 'Game/xYpos7_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[0]' (FDSE) to 'Game/xYpos7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[1]' (FDRE) to 'Game/xYpos7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[2]' (FDSE) to 'Game/xYpos7_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[8]' (FDSE) to 'Game/xYpos7_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[5]' (FDRE) to 'Game/xYpos7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[4]' (FDRE) to 'Game/xYpos7_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[3]' (FDRE) to 'Game/xYpos7_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[6]' (FDSE) to 'Game/xYpos5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[7]' (FDRE) to 'Game/xYpos7_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos7_reg[9]' (FDRE) to 'Game/xYpos5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[0]' (FDSE) to 'Game/xYpos5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[8]' (FDSE) to 'Game/xYpos5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[6]' (FDSE) to 'Game/xYpos5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[5]' (FDSE) to 'Game/xYpos5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[3]' (FDRE) to 'Game/xYpos5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[1]' (FDSE) to 'Game/xYpos5_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[2]' (FDSE) to 'Game/xYpos5_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Game/\xYpos5_reg[4] )
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[7]' (FDRE) to 'Game/xYpos5_reg[9]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos5_reg[9]' (FDRE) to 'Game/xYpos1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[0]' (FDRE) to 'Game/xYpos1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[1]' (FDRE) to 'Game/xYpos1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[2]' (FDRE) to 'Game/xYpos1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[8]' (FDRE) to 'Game/xYpos1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[5]' (FDRE) to 'Game/xYpos1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[4]' (FDRE) to 'Game/xYpos1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[3]' (FDRE) to 'Game/xYpos1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[6]' (FDRE) to 'Game/xYpos1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Game/xYpos1_reg[7]' (FDRE) to 'Game/xYpos1_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Game/\xYpos1_reg[9] )
+INFO: [Synth 8-3886] merging instance 'segMux/out_mux_reg[2]' (FDE) to 'segMux/out_mux_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (segMux/\out_mux_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Game/B_reg[0]' (FDE) to 'Game/B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/B_reg[1]' (FDE) to 'Game/B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Game/G_reg[0]' (FDE) to 'Game/G_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Game/G_reg[1]' (FDE) to 'Game/G_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Game/R_reg[1]' (FDSE) to 'Game/R_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (xYpos5_reg[4]) is unused and will be removed from module SYNC.
+WARNING: [Synth 8-3332] Sequential element (xYpos1_reg[9]) is unused and will be removed from module SYNC.
+WARNING: [Synth 8-3332] Sequential element (out_mux_reg[3]) is unused and will be removed from module SegmentMux.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Game/\B_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Game/R_reg[0]' (FDSE) to 'Game/R_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (B_reg[2]) is unused and will be removed from module SYNC.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos2_reg[0]) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos3_reg[0]) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos4_reg[0]) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos5_reg[0]) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos6_reg[0]) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos7_reg[0]) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos8_reg[0]) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (Game/xXpos1_reg[0]) is unused and will be removed from module VGA.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   177|
+|3     |LUT1   |   255|
+|4     |LUT2   |   221|
+|5     |LUT3   |    84|
+|6     |LUT4   |   153|
+|7     |LUT5   |    64|
+|8     |LUT6   |   117|
+|9     |FDRE   |   125|
+|10    |FDSE   |    47|
+|11    |LDC    |     6|
+|12    |LDP    |     1|
+|13    |IBUF   |     4|
+|14    |OBUF   |    25|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+---------------+------+
+|      |Instance   |Module         |Cells |
++------+-----------+---------------+------+
+|1     |top        |               |  1281|
+|2     |  segDec   |SegmentDecoder |     7|
+|3     |  Game     |SYNC           |  1098|
+|4     |  VgaClock |PLL            |    64|
+|5     |  segClk   |segmentClk     |    51|
+|6     |  segMux   |SegmentMux     |    30|
++------+-----------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 641.633 ; gain = 107.211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 641.633 ; gain = 431.516
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 188 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'VGA' is not ideal for floorplanning, since the cellview 'SYNC' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LDC => LDCE: 6 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+211 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 641.633 ; gain = 418.160
+INFO: [Common 17-1381] The checkpoint 'C:/Users/CAN Pc/Desktop/VHDL/Final Project/Final Project.runs/synth_1/VGA.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 641.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 30 14:29:00 2016...
